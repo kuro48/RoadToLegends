@@ -16,6 +16,9 @@
 		BF3A439127D4D812001374EC /* RoadToLegendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A439027D4D812001374EC /* RoadToLegendsTests.swift */; };
 		BF3A439B27D4D812001374EC /* RoadToLegendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A439A27D4D812001374EC /* RoadToLegendsUITests.swift */; };
 		BF3A439D27D4D812001374EC /* RoadToLegendsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A439C27D4D812001374EC /* RoadToLegendsUITestsLaunchTests.swift */; };
+		BF3A43AA27D5C7AD001374EC /* StatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A43A927D5C7AD001374EC /* StatsTableViewController.swift */; };
+		BF3A43AC27D5C7CC001374EC /* NewStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A43AB27D5C7CC001374EC /* NewStatsViewController.swift */; };
+		BF3A43AE27D5C7F0001374EC /* StatsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A43AD27D5C7F0001374EC /* StatsDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		BF3A439627D4D812001374EC /* RoadToLegendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadToLegendsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3A439A27D4D812001374EC /* RoadToLegendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadToLegendsUITests.swift; sourceTree = "<group>"; };
 		BF3A439C27D4D812001374EC /* RoadToLegendsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadToLegendsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BF3A43A927D5C7AD001374EC /* StatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewController.swift; sourceTree = "<group>"; };
+		BF3A43AB27D5C7CC001374EC /* NewStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStatsViewController.swift; sourceTree = "<group>"; };
+		BF3A43AD27D5C7F0001374EC /* StatsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				BF3A438227D4D812001374EC /* Assets.xcassets */,
 				BF3A438427D4D812001374EC /* LaunchScreen.storyboard */,
 				BF3A438727D4D812001374EC /* Info.plist */,
+				BF3A43A927D5C7AD001374EC /* StatsTableViewController.swift */,
+				BF3A43AB27D5C7CC001374EC /* NewStatsViewController.swift */,
+				BF3A43AD27D5C7F0001374EC /* StatsDetailViewController.swift */,
 			);
 			path = RoadToLegends;
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF3A437E27D4D811001374EC /* ViewController.swift in Sources */,
+				BF3A43AC27D5C7CC001374EC /* NewStatsViewController.swift in Sources */,
 				BF3A437A27D4D811001374EC /* AppDelegate.swift in Sources */,
+				BF3A43AE27D5C7F0001374EC /* StatsDetailViewController.swift in Sources */,
 				BF3A437C27D4D811001374EC /* SceneDelegate.swift in Sources */,
+				BF3A43AA27D5C7AD001374EC /* StatsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
