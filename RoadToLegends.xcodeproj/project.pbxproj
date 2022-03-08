@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514AA18A5CAE0D39FA7DC34D /* Pods_RoadToLegends_RoadToLegendsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE6E77DB244E3AD8EA4CFC4 /* Pods_RoadToLegends_RoadToLegendsUITests.framework */; };
+		9362334930B7F4BEDC3B9ED8 /* Pods_RoadToLegendsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3A5286B1BD2FBA7B4D662E /* Pods_RoadToLegendsTests.framework */; };
 		BF3A437A27D4D811001374EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A437927D4D811001374EC /* AppDelegate.swift */; };
 		BF3A437C27D4D811001374EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A437B27D4D811001374EC /* SceneDelegate.swift */; };
 		BF3A437E27D4D811001374EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A437D27D4D811001374EC /* ViewController.swift */; };
@@ -19,6 +21,12 @@
 		BF3A43AA27D5C7AD001374EC /* StatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A43A927D5C7AD001374EC /* StatsTableViewController.swift */; };
 		BF3A43AC27D5C7CC001374EC /* NewStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A43AB27D5C7CC001374EC /* NewStatsViewController.swift */; };
 		BF3A43AE27D5C7F0001374EC /* StatsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A43AD27D5C7F0001374EC /* StatsDetailViewController.swift */; };
+		BF405CD127D7077C002FBC5A /* ModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405CD027D7077C002FBC5A /* ModeViewController.swift */; };
+		BF405CD327D70792002FBC5A /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405CD227D70792002FBC5A /* CharacterViewController.swift */; };
+		BF405CD527D707A4002FBC5A /* SecondWeaponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405CD427D707A4002FBC5A /* SecondWeaponViewController.swift */; };
+		BF405CD727D707DC002FBC5A /* FirstWeaponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405CD627D707DC002FBC5A /* FirstWeaponViewController.swift */; };
+		BF405CDB27D75407002FBC5A /* NewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405CDA27D75407002FBC5A /* NewTableCell.swift */; };
+		FE9059D85561D59FFA4AFF74 /* Pods_RoadToLegends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E0BA635917A7E028D4AF1C /* Pods_RoadToLegends.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DE6E77DB244E3AD8EA4CFC4 /* Pods_RoadToLegends_RoadToLegendsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadToLegends_RoadToLegendsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		239EF14354D5E55415A8F114 /* Pods-RoadToLegends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadToLegends.debug.xcconfig"; path = "Target Support Files/Pods-RoadToLegends/Pods-RoadToLegends.debug.xcconfig"; sourceTree = "<group>"; };
+		2A3A5286B1BD2FBA7B4D662E /* Pods_RoadToLegendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadToLegendsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33DF4D1F88F3FD3A4461FFF1 /* Pods-RoadToLegends-RoadToLegendsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadToLegends-RoadToLegendsUITests.release.xcconfig"; path = "Target Support Files/Pods-RoadToLegends-RoadToLegendsUITests/Pods-RoadToLegends-RoadToLegendsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3976BC283DC254F7AA36B761 /* Pods-RoadToLegendsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadToLegendsTests.debug.xcconfig"; path = "Target Support Files/Pods-RoadToLegendsTests/Pods-RoadToLegendsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55A3FAAE555D21AF0E40D47C /* Pods-RoadToLegends-RoadToLegendsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadToLegends-RoadToLegendsUITests.debug.xcconfig"; path = "Target Support Files/Pods-RoadToLegends-RoadToLegendsUITests/Pods-RoadToLegends-RoadToLegendsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		92E0BA635917A7E028D4AF1C /* Pods_RoadToLegends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadToLegends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A8F3EDC77B0A9224980B65 /* Pods-RoadToLegends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadToLegends.release.xcconfig"; path = "Target Support Files/Pods-RoadToLegends/Pods-RoadToLegends.release.xcconfig"; sourceTree = "<group>"; };
 		BF3A437627D4D811001374EC /* RoadToLegends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadToLegends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3A437927D4D811001374EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF3A437B27D4D811001374EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +71,12 @@
 		BF3A43A927D5C7AD001374EC /* StatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewController.swift; sourceTree = "<group>"; };
 		BF3A43AB27D5C7CC001374EC /* NewStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStatsViewController.swift; sourceTree = "<group>"; };
 		BF3A43AD27D5C7F0001374EC /* StatsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsDetailViewController.swift; sourceTree = "<group>"; };
+		BF405CD027D7077C002FBC5A /* ModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeViewController.swift; sourceTree = "<group>"; };
+		BF405CD227D70792002FBC5A /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		BF405CD427D707A4002FBC5A /* SecondWeaponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondWeaponViewController.swift; sourceTree = "<group>"; };
+		BF405CD627D707DC002FBC5A /* FirstWeaponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWeaponViewController.swift; sourceTree = "<group>"; };
+		BF405CDA27D75407002FBC5A /* NewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableCell.swift; sourceTree = "<group>"; };
+		E2BB7A42B6862F23468D02FB /* Pods-RoadToLegendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadToLegendsTests.release.xcconfig"; path = "Target Support Files/Pods-RoadToLegendsTests/Pods-RoadToLegendsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE9059D85561D59FFA4AFF74 /* Pods_RoadToLegends.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9362334930B7F4BEDC3B9ED8 /* Pods_RoadToLegendsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +100,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				514AA18A5CAE0D39FA7DC34D /* Pods_RoadToLegends_RoadToLegendsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B921735C72D08E32DFC009AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				239EF14354D5E55415A8F114 /* Pods-RoadToLegends.debug.xcconfig */,
+				B4A8F3EDC77B0A9224980B65 /* Pods-RoadToLegends.release.xcconfig */,
+				55A3FAAE555D21AF0E40D47C /* Pods-RoadToLegends-RoadToLegendsUITests.debug.xcconfig */,
+				33DF4D1F88F3FD3A4461FFF1 /* Pods-RoadToLegends-RoadToLegendsUITests.release.xcconfig */,
+				3976BC283DC254F7AA36B761 /* Pods-RoadToLegendsTests.debug.xcconfig */,
+				E2BB7A42B6862F23468D02FB /* Pods-RoadToLegendsTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BF3A436D27D4D811001374EC = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +128,8 @@
 				BF3A438F27D4D812001374EC /* RoadToLegendsTests */,
 				BF3A439927D4D812001374EC /* RoadToLegendsUITests */,
 				BF3A437727D4D811001374EC /* Products */,
+				B921735C72D08E32DFC009AF /* Pods */,
+				DC8E550BD3F10DE1917C9C16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +156,11 @@
 				BF3A43A927D5C7AD001374EC /* StatsTableViewController.swift */,
 				BF3A43AB27D5C7CC001374EC /* NewStatsViewController.swift */,
 				BF3A43AD27D5C7F0001374EC /* StatsDetailViewController.swift */,
+				BF405CD027D7077C002FBC5A /* ModeViewController.swift */,
+				BF405CD227D70792002FBC5A /* CharacterViewController.swift */,
+				BF405CD427D707A4002FBC5A /* SecondWeaponViewController.swift */,
+				BF405CD627D707DC002FBC5A /* FirstWeaponViewController.swift */,
+				BF405CDA27D75407002FBC5A /* NewTableCell.swift */,
 			);
 			path = RoadToLegends;
 			sourceTree = "<group>";
@@ -136,6 +182,16 @@
 			path = RoadToLegendsUITests;
 			sourceTree = "<group>";
 		};
+		DC8E550BD3F10DE1917C9C16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92E0BA635917A7E028D4AF1C /* Pods_RoadToLegends.framework */,
+				1DE6E77DB244E3AD8EA4CFC4 /* Pods_RoadToLegends_RoadToLegendsUITests.framework */,
+				2A3A5286B1BD2FBA7B4D662E /* Pods_RoadToLegendsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF3A43A027D4D812001374EC /* Build configuration list for PBXNativeTarget "RoadToLegends" */;
 			buildPhases = (
+				A9CE27679EF5B2FB2AEF0156 /* [CP] Check Pods Manifest.lock */,
 				BF3A437227D4D811001374EC /* Sources */,
 				BF3A437327D4D811001374EC /* Frameworks */,
 				BF3A437427D4D811001374EC /* Resources */,
+				B3F7F57DD27BBA6BB93ABA8E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +218,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF3A43A327D4D812001374EC /* Build configuration list for PBXNativeTarget "RoadToLegendsTests" */;
 			buildPhases = (
+				133127DCCC4FF1774EA7AF1C /* [CP] Check Pods Manifest.lock */,
 				BF3A438827D4D812001374EC /* Sources */,
 				BF3A438927D4D812001374EC /* Frameworks */,
 				BF3A438A27D4D812001374EC /* Resources */,
@@ -178,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF3A43A627D4D812001374EC /* Build configuration list for PBXNativeTarget "RoadToLegendsUITests" */;
 			buildPhases = (
+				D9D737D5E56E8BD7E6C6588F /* [CP] Check Pods Manifest.lock */,
 				BF3A439227D4D812001374EC /* Sources */,
 				BF3A439327D4D812001374EC /* Frameworks */,
 				BF3A439427D4D812001374EC /* Resources */,
+				F26AC323DAFF3774327555C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,15 +323,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		133127DCCC4FF1774EA7AF1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoadToLegendsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9CE27679EF5B2FB2AEF0156 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoadToLegends-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3F7F57DD27BBA6BB93ABA8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoadToLegends/Pods-RoadToLegends-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoadToLegends/Pods-RoadToLegends-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RoadToLegends/Pods-RoadToLegends-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9D737D5E56E8BD7E6C6588F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoadToLegends-RoadToLegendsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F26AC323DAFF3774327555C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoadToLegends-RoadToLegendsUITests/Pods-RoadToLegends-RoadToLegendsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoadToLegends-RoadToLegendsUITests/Pods-RoadToLegends-RoadToLegendsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RoadToLegends-RoadToLegendsUITests/Pods-RoadToLegends-RoadToLegendsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF3A437227D4D811001374EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF405CDB27D75407002FBC5A /* NewTableCell.swift in Sources */,
 				BF3A437E27D4D811001374EC /* ViewController.swift in Sources */,
 				BF3A43AC27D5C7CC001374EC /* NewStatsViewController.swift in Sources */,
 				BF3A437A27D4D811001374EC /* AppDelegate.swift in Sources */,
 				BF3A43AE27D5C7F0001374EC /* StatsDetailViewController.swift in Sources */,
+				BF405CD327D70792002FBC5A /* CharacterViewController.swift in Sources */,
+				BF405CD727D707DC002FBC5A /* FirstWeaponViewController.swift in Sources */,
+				BF405CD527D707A4002FBC5A /* SecondWeaponViewController.swift in Sources */,
+				BF405CD127D7077C002FBC5A /* ModeViewController.swift in Sources */,
 				BF3A437C27D4D811001374EC /* SceneDelegate.swift in Sources */,
 				BF3A43AA27D5C7AD001374EC /* StatsTableViewController.swift in Sources */,
 			);
@@ -446,6 +615,7 @@
 		};
 		BF3A43A127D4D812001374EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 239EF14354D5E55415A8F114 /* Pods-RoadToLegends.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,6 +644,7 @@
 		};
 		BF3A43A227D4D812001374EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4A8F3EDC77B0A9224980B65 /* Pods-RoadToLegends.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -502,6 +673,7 @@
 		};
 		BF3A43A427D4D812001374EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3976BC283DC254F7AA36B761 /* Pods-RoadToLegendsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -522,6 +694,7 @@
 		};
 		BF3A43A527D4D812001374EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2BB7A42B6862F23468D02FB /* Pods-RoadToLegendsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -542,6 +715,7 @@
 		};
 		BF3A43A727D4D812001374EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55A3FAAE555D21AF0E40D47C /* Pods-RoadToLegends-RoadToLegendsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -560,6 +734,7 @@
 		};
 		BF3A43A827D4D812001374EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33DF4D1F88F3FD3A4461FFF1 /* Pods-RoadToLegends-RoadToLegendsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
