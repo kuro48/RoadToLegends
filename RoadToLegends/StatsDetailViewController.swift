@@ -16,6 +16,7 @@ class StatsDetailViewController: UIViewController {
     @IBOutlet weak var death: UILabel!
     @IBOutlet weak var firstWeapon: UILabel!
     @IBOutlet weak var secondWeapon: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

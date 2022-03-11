@@ -8,7 +8,8 @@
 import UIKit
 
 class CharacterViewController: UIViewController {
-
+    @IBOutlet weak var charascterTable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

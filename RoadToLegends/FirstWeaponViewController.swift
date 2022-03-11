@@ -8,7 +8,9 @@
 import UIKit
 
 class FirstWeaponViewController: UIViewController {
-
+    @IBOutlet weak var firstWeaponTable: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

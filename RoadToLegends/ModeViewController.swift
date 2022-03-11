@@ -7,23 +7,30 @@
 
 import UIKit
 
-class ModeViewController: UIViewController {
-
+class ModeViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
+    
+    var mode:[String] = ["トリオ","デュオ","ランク","アリーナ","アリーナランク"]
+    @IBOutlet weak var modeTable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        modeTable.delegate = self
+        modeTable.dataSource = self
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return mode.count
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = modeTable.dequeueReusableCell(withIdentifier: "ModeCell", for: indexPath)
+        
+        cell.textLabel!.text = mode[indexPath.row]
+        
+        return cell
+    }
 
 }

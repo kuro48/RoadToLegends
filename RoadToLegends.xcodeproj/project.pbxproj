@@ -21,11 +21,7 @@
 		BF3A43AA27D5C7AD001374EC /* StatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A43A927D5C7AD001374EC /* StatsTableViewController.swift */; };
 		BF3A43AC27D5C7CC001374EC /* NewStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A43AB27D5C7CC001374EC /* NewStatsViewController.swift */; };
 		BF3A43AE27D5C7F0001374EC /* StatsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A43AD27D5C7F0001374EC /* StatsDetailViewController.swift */; };
-		BF405CD127D7077C002FBC5A /* ModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405CD027D7077C002FBC5A /* ModeViewController.swift */; };
-		BF405CD327D70792002FBC5A /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405CD227D70792002FBC5A /* CharacterViewController.swift */; };
-		BF405CD527D707A4002FBC5A /* SecondWeaponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405CD427D707A4002FBC5A /* SecondWeaponViewController.swift */; };
-		BF405CD727D707DC002FBC5A /* FirstWeaponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405CD627D707DC002FBC5A /* FirstWeaponViewController.swift */; };
-		BF405CDB27D75407002FBC5A /* NewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405CDA27D75407002FBC5A /* NewTableCell.swift */; };
+		BF405CDD27D7C150002FBC5A /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405CDC27D7C150002FBC5A /* Stats.swift */; };
 		FE9059D85561D59FFA4AFF74 /* Pods_RoadToLegends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E0BA635917A7E028D4AF1C /* Pods_RoadToLegends.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,11 +67,7 @@
 		BF3A43A927D5C7AD001374EC /* StatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewController.swift; sourceTree = "<group>"; };
 		BF3A43AB27D5C7CC001374EC /* NewStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStatsViewController.swift; sourceTree = "<group>"; };
 		BF3A43AD27D5C7F0001374EC /* StatsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsDetailViewController.swift; sourceTree = "<group>"; };
-		BF405CD027D7077C002FBC5A /* ModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeViewController.swift; sourceTree = "<group>"; };
-		BF405CD227D70792002FBC5A /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
-		BF405CD427D707A4002FBC5A /* SecondWeaponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondWeaponViewController.swift; sourceTree = "<group>"; };
-		BF405CD627D707DC002FBC5A /* FirstWeaponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWeaponViewController.swift; sourceTree = "<group>"; };
-		BF405CDA27D75407002FBC5A /* NewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableCell.swift; sourceTree = "<group>"; };
+		BF405CDC27D7C150002FBC5A /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		E2BB7A42B6862F23468D02FB /* Pods-RoadToLegendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadToLegendsTests.release.xcconfig"; path = "Target Support Files/Pods-RoadToLegendsTests/Pods-RoadToLegendsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,7 +109,6 @@
 				3976BC283DC254F7AA36B761 /* Pods-RoadToLegendsTests.debug.xcconfig */,
 				E2BB7A42B6862F23468D02FB /* Pods-RoadToLegendsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -156,11 +147,7 @@
 				BF3A43A927D5C7AD001374EC /* StatsTableViewController.swift */,
 				BF3A43AB27D5C7CC001374EC /* NewStatsViewController.swift */,
 				BF3A43AD27D5C7F0001374EC /* StatsDetailViewController.swift */,
-				BF405CD027D7077C002FBC5A /* ModeViewController.swift */,
-				BF405CD227D70792002FBC5A /* CharacterViewController.swift */,
-				BF405CD427D707A4002FBC5A /* SecondWeaponViewController.swift */,
-				BF405CD627D707DC002FBC5A /* FirstWeaponViewController.swift */,
-				BF405CDA27D75407002FBC5A /* NewTableCell.swift */,
+				BF405CDC27D7C150002FBC5A /* Stats.swift */,
 			);
 			path = RoadToLegends;
 			sourceTree = "<group>";
@@ -431,15 +418,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF405CDB27D75407002FBC5A /* NewTableCell.swift in Sources */,
+				BF405CDD27D7C150002FBC5A /* Stats.swift in Sources */,
 				BF3A437E27D4D811001374EC /* ViewController.swift in Sources */,
 				BF3A43AC27D5C7CC001374EC /* NewStatsViewController.swift in Sources */,
 				BF3A437A27D4D811001374EC /* AppDelegate.swift in Sources */,
 				BF3A43AE27D5C7F0001374EC /* StatsDetailViewController.swift in Sources */,
-				BF405CD327D70792002FBC5A /* CharacterViewController.swift in Sources */,
-				BF405CD727D707DC002FBC5A /* FirstWeaponViewController.swift in Sources */,
-				BF405CD527D707A4002FBC5A /* SecondWeaponViewController.swift in Sources */,
-				BF405CD127D7077C002FBC5A /* ModeViewController.swift in Sources */,
 				BF3A437C27D4D811001374EC /* SceneDelegate.swift in Sources */,
 				BF3A43AA27D5C7AD001374EC /* StatsTableViewController.swift in Sources */,
 			);
