@@ -6,32 +6,37 @@
 //
 
 import UIKit
+import RealmSwift
 
 class StatsDetailViewController: UIViewController {
+    
+    let realm = try! Realm()
+    var statsList: Stats!
 
-    @IBOutlet weak var rank: UILabel!
-    @IBOutlet weak var mode: UILabel!
-    @IBOutlet weak var kill: UILabel!
-    @IBOutlet weak var damage: UILabel!
-    @IBOutlet weak var death: UILabel!
-    @IBOutlet weak var firstWeapon: UILabel!
-    @IBOutlet weak var secondWeapon: UILabel!
+    @IBOutlet weak var Rank: UILabel!
+    @IBOutlet weak var Mode: UILabel!
+    @IBOutlet weak var Kill: UILabel!
+    @IBOutlet weak var Damage: UILabel!
+    @IBOutlet weak var Death: UILabel!
+    @IBOutlet weak var FirstWeapon: UILabel!
+    @IBOutlet weak var SecondWeapon: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        Rank.text = statsList.rank
+        Mode.text = statsList.mode
+        Kill.text = String(statsList.kill)
+        Damage.text = String(statsList.damage)
+        Death.text = String(statsList.death)
+        FirstWeapon.text = statsList.weapon1
+        SecondWeapon.text = statsList.weapon2
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+   @IBAction func back(){
+//        self.navigationController?.popViewController(animated: true)
+       dismiss(animated: true)
     }
-    */
-
+    
 }

@@ -97,7 +97,6 @@
         <!--New Stats View Controller-->
         <scene sceneID="5po-5J-mYq">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sxj-mW-clb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="QaA-io-qYo" customClass="NewStatsViewController" customModule="RoadToLegends" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7To-ma-hLb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -109,6 +108,7 @@
                     <navigationItem key="navigationItem" id="IJg-uP-pxK"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sxj-mW-clb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4513.04347826087" y="-297.32142857142856"/>
         </scene>
@@ -161,6 +161,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ZPo-It-1GI" kind="presentation" identifier="toDetail" modalPresentationStyle="fullScreen" id="2th-ny-t0j"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -168,10 +171,9 @@
                         <viewLayoutGuide key="safeArea" id="Q8M-BP-C3y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Stats" id="JJL-h7-1bM"/>
+                    <tabBarItem key="tabBarItem" title="Stats" image="gamecontroller" catalog="system" id="JJL-h7-1bM"/>
                     <connections>
                         <outlet property="statsTable" destination="rs6-KD-7kt" id="fLc-W3-Yzb"/>
-                        <segue destination="ZPo-It-1GI" kind="show" id="pPc-UH-44l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L5V-7w-SXD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -183,17 +185,17 @@
             <objects>
                 <viewController id="ZPo-It-1GI" customClass="StatsDetailViewController" customModule="RoadToLegends" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TJN-Xc-faZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39m-Z6-L8t">
-                                <rect key="frame" x="188.5" y="98" width="37" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39m-Z6-L8t">
+                                <rect key="frame" x="147" y="142" width="120" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="トリオ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoO-9o-aGu">
-                                <rect key="frame" x="50" y="229" width="91" height="36"/>
+                                <rect key="frame" x="50" y="273" width="91" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -235,13 +237,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ox-5a-G1h">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="mMn-kM-sZ1"/>
                                 </constraints>
                                 <items>
                                     <navigationItem title="詳細" id="DsD-ia-6il">
-                                        <barButtonItem key="leftBarButtonItem" title="戻る" id="UbG-3T-gLu"/>
+                                        <barButtonItem key="leftBarButtonItem" title="戻る" id="UbG-3T-gLu">
+                                            <connections>
+                                                <action selector="back" destination="ZPo-It-1GI" id="5JO-L0-Nbm"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -284,12 +290,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWb-SW-gOJ">
-                                <rect key="frame" x="233.5" y="149" width="17.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ダメージ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9B-JF-TbX">
                                 <rect key="frame" x="166" y="379" width="82" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -310,7 +310,6 @@
                             <constraint firstItem="7Ox-5a-G1h" firstAttribute="centerX" secondItem="39m-Z6-L8t" secondAttribute="centerX" id="5vw-0Z-9sf"/>
                             <constraint firstItem="sfd-FI-Vd5" firstAttribute="top" secondItem="Har-pk-Le0" secondAttribute="bottom" constant="49" id="6o9-UJ-ZRv"/>
                             <constraint firstItem="2fc-RQ-Wso" firstAttribute="bottom" secondItem="VTK-Ur-knp" secondAttribute="bottom" id="7vk-Fb-BTp"/>
-                            <constraint firstItem="rWb-SW-gOJ" firstAttribute="bottom" secondItem="39m-Z6-L8t" secondAttribute="bottom" id="AZz-UK-swM"/>
                             <constraint firstItem="39m-Z6-L8t" firstAttribute="top" secondItem="7Ox-5a-G1h" secondAttribute="bottom" constant="54" id="Ght-AN-6sW"/>
                             <constraint firstItem="zoO-9o-aGu" firstAttribute="top" secondItem="7Ox-5a-G1h" secondAttribute="bottom" constant="185" id="HHJ-eK-cOQ"/>
                             <constraint firstItem="c9B-JF-TbX" firstAttribute="top" secondItem="TJN-Xc-faZ" secondAttribute="top" constant="379" id="HPn-p7-ZF2"/>
@@ -327,7 +326,6 @@
                             <constraint firstItem="RMo-xa-rjJ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Har-pk-Le0" secondAttribute="trailing" symbolic="YES" id="hxq-bB-5y6"/>
                             <constraint firstItem="IFl-7W-2od" firstAttribute="top" secondItem="c9B-JF-TbX" secondAttribute="bottom" constant="70" id="ilz-Ia-Kaf"/>
                             <constraint firstItem="c9B-JF-TbX" firstAttribute="baseline" secondItem="LUI-8d-YUA" secondAttribute="firstBaseline" id="jxc-S1-yy2"/>
-                            <constraint firstItem="RMo-xa-rjJ" firstAttribute="trailing" secondItem="rWb-SW-gOJ" secondAttribute="trailing" constant="163" id="kNm-5b-3PX"/>
                             <constraint firstItem="c9B-JF-TbX" firstAttribute="baseline" secondItem="TBq-p1-jOK" secondAttribute="firstBaseline" id="lg7-L2-Vjt"/>
                             <constraint firstItem="c9B-JF-TbX" firstAttribute="top" secondItem="VTK-Ur-knp" secondAttribute="bottom" constant="25" id="nZm-Fq-H5b"/>
                             <constraint firstItem="ibY-9x-rSv" firstAttribute="leading" secondItem="FEn-8G-R2S" secondAttribute="trailing" constant="1" id="pe4-Bc-iDU"/>
@@ -341,7 +339,6 @@
                             <constraint firstAttribute="trailing" secondItem="7Ox-5a-G1h" secondAttribute="trailing" id="v8q-BO-nLb"/>
                             <constraint firstItem="FEn-8G-R2S" firstAttribute="leading" secondItem="RMo-xa-rjJ" secondAttribute="leading" constant="65" id="wB0-vI-bt4"/>
                             <constraint firstItem="RMo-xa-rjJ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kMx-cM-rwO" secondAttribute="trailingMargin" id="xOc-oL-8it"/>
-                            <constraint firstItem="rWb-SW-gOJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="39m-Z6-L8t" secondAttribute="trailing" symbolic="YES" id="yJB-3Z-HGL"/>
                             <constraint firstItem="kMx-cM-rwO" firstAttribute="bottom" secondItem="FEn-8G-R2S" secondAttribute="bottom" id="zIy-Cy-Iu0"/>
                             <constraint firstItem="RMo-xa-rjJ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zoO-9o-aGu" secondAttribute="trailing" symbolic="YES" id="zdU-vg-hhy"/>
                             <constraint firstItem="IFl-7W-2od" firstAttribute="leading" secondItem="zoO-9o-aGu" secondAttribute="leading" id="zfC-wb-AjW"/>
@@ -401,6 +398,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
