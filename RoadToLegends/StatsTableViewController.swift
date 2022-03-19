@@ -38,6 +38,7 @@ class StatsTableViewController: UIViewController, UITableViewDelegate ,UITableVi
         let cell =  self.statsTable.dequeueReusableCell(withIdentifier: "StatsCell", for: indexPath)
         let stats = self.statsList[indexPath.row]
         cell.textLabel?.text = stats.rank
+        cell.textLabel?.textColor = UIColor.white
         return cell
     }
     
